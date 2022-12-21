@@ -1,0 +1,3 @@
+### execute seed ###
+
+GET {{host}}/seed

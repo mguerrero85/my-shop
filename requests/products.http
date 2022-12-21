@@ -1,0 +1,39 @@
+### create a new product ###
+
+POST {{host}}/products
+Content-Type: application/json
+
+{
+    "title" : "Mattias shirt1",
+    "sizes": ["S", "M", "L"],
+    "gender": "men",
+    //"slug": "hola mundo",
+    "price": 100.55,
+    "images": [
+        "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png",
+        "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+    ]
+}
+
+### get all products ###
+
+GET {{host}}/products?limit=2&offset=0
+
+### get by id ###
+
+GET {{host}}/products/Mattias shirt10
+
+### delete a product ###
+
+DELETE {{host}}/products/f76a8ee3-803f-49ba-9e55-4a00d5569ae3
+
+
+### update a product ###
+PATCH {{host}}/products/f76a8ee3-803f-49ba-9e55-4a00d5569ae3
+Content-Type: application/json
+
+{
+    "images": [
+        "https://image1.png"
+    ]
+}
