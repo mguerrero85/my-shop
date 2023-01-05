@@ -22,3 +22,8 @@ Content-Type: application/json
 
 GET {{host}}/auth/private
 Authorization: {{token}}
+
+### private2 route test ###
+
+GET {{host}}/auth/private2
+Authorization: {{token}}
